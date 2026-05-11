@@ -11,8 +11,13 @@ import { SectionWrapper } from "../../hoc";
 import { Header } from "../atoms/Header";
 import { TExperience } from "../../types";
 import { config } from "../../constants/config";
+import { useTranslation } from "../../hooks/useTranslation";
 
 const ExperienceCard: React.FC<TExperience> = (experience) => {
+  const { t } = useTranslation();
+  const title = t(`experiencesList.${experience.id}.title`, { defaultValue: experience.title });
+  const points = t(`experiencesList.${experience.id}.points`, { returnObjects: true, defaultValue: experience.points }) as string[];
+
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -33,7 +38,7 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
       }
     >
       <div>
-        <h3 className="text-[24px] font-bold text-white">{experience.title}</h3>
+        <h3 className="text-[24px] font-bold text-white">{title}</h3>
         <p
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
@@ -43,7 +48,7 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
       </div>
 
       <ul className="ml-5 mt-5 list-disc space-y-2">
-        {experience.points.map((point, index) => (
+        {points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
             className="text-white-100 pl-1 text-[14px] tracking-wider"
@@ -57,9 +62,11 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
 };
 
 const Experience = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-      <Header useMotion={true} {...config.sections.experience} />
+      <Header useMotion={true} p={t("experience.subtitle")} h2={t("experience.title")} />
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>

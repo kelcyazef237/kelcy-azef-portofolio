@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "../../hooks/useTranslation";
 
 import { styles } from "../../constants/styles";
 import { navLinks } from "../../constants";
@@ -7,9 +8,14 @@ import { logo, menu, close } from "../../assets";
 import { config } from "../../constants/config";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [active, setActive] = useState<string | null>();
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === "en" ? "fr" : "en");
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,7 +76,7 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="hidden list-none flex-row gap-10 sm:flex">
+        <ul className="hidden list-none flex-row gap-10 sm:flex items-center">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -78,12 +84,26 @@ const Navbar = () => {
                 active === nav.id ? "text-white" : "text-secondary"
               } cursor-pointer text-[18px] font-medium hover:text-white`}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`}>{t(`nav.${nav.id}`)}</a>
             </li>
           ))}
+          <li>
+            <button
+              onClick={toggleLanguage}
+              className="ml-4 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm font-semibold text-white transition hover:bg-white/20"
+            >
+              {i18n.language === "en" ? "FR" : "EN"}
+            </button>
+          </li>
         </ul>
 
-        <div className="flex flex-1 items-center justify-end sm:hidden">
+        <div className="flex flex-1 items-center justify-end sm:hidden gap-4">
+          <button
+            onClick={toggleLanguage}
+            className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm font-semibold text-white transition hover:bg-white/20"
+          >
+            {i18n.language === "en" ? "FR" : "EN"}
+          </button>
           <img
             src={toggle ? close : menu}
             alt="menu"
@@ -107,7 +127,7 @@ const Navbar = () => {
                     setToggle(!toggle);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}`}>{t(`nav.${nav.id}`)}</a>
                 </li>
               ))}
             </ul>

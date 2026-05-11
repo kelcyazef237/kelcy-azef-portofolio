@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "about": "À propos",
+    "work": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Kelcy AZEFACK",
+    "tagline1": "Je crée des applications, j'automatise l'infrastructure,",
+    "tagline2": "et je livre des produits — Dev & DevOps"
+  },
+  "about": {
+    "subtitle": "Introduction",
+    "title": "Aperçu.",
+    "content": "Je suis un Développeur et Ingénieur DevOps qui crée des produits de bout en bout — de l'écriture d'un code propre et évolutif au déploiement et à l'automatisation de l'infrastructure cloud. Ma stack technique couvre React, TypeScript, Golang, Node.js côté développement, et Kubernetes, Docker, Terraform et AWS côté infrastructure. Je suis passionné par la création de produits réels qui résolvent de vrais problèmes — qu'il s'agisse d'une plateforme d'événements complète, d'un outil d'intelligence en cybersécurité ou d'un système de billetterie et de réservation fluide."
+  },
+  "experience": {
+    "subtitle": "Ce que j'ai accompli jusqu'à présent",
+    "title": "Expérience Professionnelle."
+  },
+  "feedbacks": {
+    "subtitle": "Au-delà du code",
+    "title": "Loisirs & Intérêts.",
+    "showing": "Affichage de 3 sur 6 — ce qui me passionne en dehors du travail."
+  },
+  "works": {
+    "subtitle": "Mon travail",
+    "title": "Projets.",
+    "content": "Les projets suivants présentent mes compétences et mon expérience à travers des exemples concrets de mon travail. Chaque projet est brièvement décrit avec des liens vers les dépôts de code. Cela reflète ma capacité à résoudre des problèmes complexes, à travailler avec différentes technologies et à gérer des projets efficacement."
+  },
+  "contact": {
+    "subtitle": "Entrons en contact",
+    "title": "Contact.",
+    "nameLabel": "Votre Nom",
+    "namePlaceholder": "Quel est votre nom ?",
+    "emailLabel": "Votre Email",
+    "emailPlaceholder": "Quel est votre email ?",
+    "messageLabel": "Votre Message",
+    "messagePlaceholder": "Que voulez-vous dire ?",
+    "send": "Envoyer",
+    "sending": "Envoi en cours..."
+  },
+  "services": {
+    "fullstack": "Développeur Full-Stack",
+    "devops": "Ingénieur DevOps",
+    "cloud": "Cloud & Infrastructure",
+    "mobile": "Créateur d'App Mobile"
+  },
+  "experiencesList": {
+    "mboa": {
+      "title": "Développeur",
+      "points": [
+        "Création et maintenance de fonctionnalités full-stack pour l'application Mboa Kitchen avec React et Node.js.",
+        "Mise en place de pipelines CI/CD à l'aide de GitHub Actions pour des tests et des déploiements automatisés.",
+        "Conteneurisation de l'application via Docker pour des environnements de développement et de production cohérents.",
+        "Intégration de Firebase pour la base de données en temps réel, l'authentification et le stockage cloud."
+      ]
+    },
+    "altech": {
+      "title": "Développeur & Ingénieur DevOps",
+      "points": [
+        "Développement de services backend évolutifs et d'API REST à l'aide de Node.js et Golang.",
+        "Conception et mise en œuvre de flux de travail CI/CD, réduisant le temps de déploiement de 60%.",
+        "Gestion de clusters Kubernetes pour les charges de travail en production avec des capacités de mise à l'échelle automatique.",
+        "Mise en œuvre de l'infrastructure en tant que code via Terraform pour les déploiements cloud."
+      ]
+    },
+    "docgen": {
+      "title": "Développeur",
+      "points": [
+        "Développement de fonctionnalités de génération de documents pour les clients entreprises avec React et TypeScript.",
+        "Migration d'applications legacy vers une architecture de microservices conteneurisée sur AWS.",
+        "Mise en œuvre de pratiques GitOps via ArgoCD pour un déploiement continu déclaratif.",
+        "Architecture d'une infrastructure cloud sécurisée sur AWS avec sauvegarde automatisée et reprise après sinistre."
+      ]
+    },
+    "horaay": {
+      "title": "Développeur",
+      "points": [
+        "Création et mise à l'échelle de la plateforme événementielle Hooray — un écosystème complet de gestion d'événements.",
+        "Développement du système Hooray Cards & Reservation avec billetterie virtuelle basée sur QR code.",
+        "Création de MYEVIEW, un outil d'intelligence en cybersécurité pour la découverte d'actifs propulsé par Golang.",
+        "Conception d'une infrastructure AWS multi-régions axée sur la fiabilité et la performance."
+      ]
+    }
+  },
+  "projectsList": {
+    "hooray": {
+      "name": "Hooray — Gestionnaire d'Événements",
+      "description": "Une plateforme complète de gestion d'événements où les prestataires de services peuvent publier des offres, créer des événements et gérer les réservations. Les professionnels disposent d'un tableau de bord dédié pour lister leurs services et toucher les organisateurs d'événements en temps réel. Construit avec Firebase, React et déployé pour la production."
+    },
+    "myeview": {
+      "name": "MYEVIEW — Renseignement Cyber",
+      "description": "Une puissante application d'intelligence en cybersécurité conçue pour la découverte d'actifs, la reconnaissance de réseaux et la visibilité des menaces. MYEVIEW aide les équipes de sécurité à cartographier leur surface d'attaque avec des scans automatisés et des renseignements exploitables — le tout depuis une interface claire et rapide développée en Go et déployée sur AWS."
+    },
+    "cards": {
+      "name": "Hooray Cards & Réservations",
+      "description": "Un système intelligent de réservation et de billetterie permettant aux participants de réserver leur place à des événements avec des billets virtuels. Les fonctionnalités incluent la génération de codes QR pour un enregistrement fluide sur place, la disponibilité des sièges en temps réel et un panneau d'administration pour gérer la capacité. Les événements, réimaginés."
+    }
+  },
+  "hobbiesList": {
+    "opensource": {
+      "hobby": "Contribution Open Source",
+      "description": "J'adore plonger dans des projets open source — lire du code, corriger des bugs et ajouter des fonctionnalités. C'est ainsi que j'affine mes compétences et que je redonne à la communauté."
+    },
+    "ctf": {
+      "hobby": "CTF & Défis de Cybersécurité",
+      "description": "Les compétitions Capture The Flag sont mon terrain de jeu numérique. Du reverse engineering aux exploits web, j'apprécie la nature analytique des défis de piratage éthique."
+    },
+    "sideprojects": {
+      "hobby": "Création de Projets Personnels",
+      "description": "Rien ne vaut la transformation d'une idée en un produit fonctionnel. Je bidouille toujours sur des projets personnels pour explorer de nouvelles stacks et résoudre des problèmes concrets."
+    },
+    "techdocs": {
+      "hobby": "Lecture de Docs Tech & Papiers de Recherche",
+      "description": "Je suis un passionné de documentation. Lire des RFC, des livres blancs et des recherches sur les systèmes distribués ou la sécurité me maintient à la pointe de la technologie."
+    },
+    "homelab": {
+      "hobby": "Bricolage Homelab",
+      "description": "Mon serveur domestique est mon bac à sable. J'expérimente avec des services auto-hébergés, des réseaux et des charges de travail conteneurisées — car la meilleure façon d'apprendre l'infra est de la casser et de la réparer."
+    },
+    "music": {
+      "hobby": "Musique & Sessions de Code Lo-fi",
+      "description": "Une bonne session de code s'accompagne toujours d'une bande-son. Je suis obsédé par le hip-hop lo-fi, le jazz et les rythmes ambiants. Parfois, je produis mes propres boucles musicales."
+    }
+  }
+}

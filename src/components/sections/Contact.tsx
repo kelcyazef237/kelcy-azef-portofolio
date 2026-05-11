@@ -7,6 +7,7 @@ import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
+import { useTranslation } from "../../hooks/useTranslation";
 
 const INITIAL_STATE = Object.fromEntries(
   Object.keys(config.contact.form).map((input) => [input, ""])
@@ -19,6 +20,7 @@ const emailjsConfig = {
 };
 
 const Contact = () => {
+  const { t } = useTranslation();
   const formRef = useRef<React.LegacyRef<HTMLFormElement> | undefined>();
   const [form, setForm] = useState(INITIAL_STATE);
   const [loading, setLoading] = useState(false);
@@ -73,7 +75,7 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="bg-black-100 flex-[0.75] rounded-2xl p-8"
       >
-        <Header useMotion={false} {...config.contact} />
+        <Header useMotion={false} p={t("contact.subtitle")} h2={t("contact.title")} />
 
         <form
           // @ts-expect-error
@@ -82,8 +84,8 @@ const Contact = () => {
           className="mt-12 flex flex-col gap-8"
         >
           {Object.keys(config.contact.form).map((input) => {
-            const { span, placeholder } =
-              config.contact.form[input as keyof typeof config.contact.form];
+            const span = t(`contact.${input}Label`);
+            const placeholder = t(`contact.${input}Placeholder`);
             const Component = input === "message" ? "textarea" : "input";
 
             return (
@@ -105,7 +107,7 @@ const Contact = () => {
             type="submit"
             className="bg-tertiary shadow-primary w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none"
           >
-            {loading ? "Sending..." : "Send"}
+            {loading ? t("contact.sending") : t("contact.send")}
           </button>
         </form>
       </motion.div>

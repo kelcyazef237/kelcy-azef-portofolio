@@ -5,6 +5,7 @@ import type {
   TExperience,
   TTestimonial,
   TProject,
+  THobby,
 } from "../types";
 
 import {
@@ -51,19 +52,23 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    id: "fullstack",
+    title: "Full-Stack Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    id: "devops",
+    title: "DevOps Engineer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    id: "cloud",
+    title: "Cloud & Infrastructure",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    id: "mobile",
+    title: "Mobile & App Builder",
     icon: creator,
   },
 ];
@@ -125,55 +130,59 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
+    id: "mboa",
+    title: "Developer",
+    companyName: "Mboa Kitchen APP",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2024 - 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built and maintained full-stack features for the Mboa Kitchen app using React and Node.js.",
+      "Set up CI/CD pipelines using GitHub Actions for automated testing and deployment.",
+      "Dockerized the application for consistent development and production environments.",
+      "Integrated Firebase for real-time database, authentication, and cloud storage.",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
+    id: "altech",
+    title: "Developer & DevOps Engineer",
+    companyName: "Altech Engineers",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed scalable backend services and REST APIs using Node.js and Golang.",
+      "Designed and implemented CI/CD workflows reducing deployment time by 60%.",
+      "Managed Kubernetes clusters for production workloads with automated scaling capabilities.",
+      "Implemented infrastructure as code practices using Terraform for cloud deployments.",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
+    id: "docgen",
+    title: "Developer",
+    companyName: "DocGen Camp",
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed document generation features for enterprise clients using React and TypeScript.",
+      "Migrated legacy applications to containerized microservices architecture on AWS.",
+      "Implemented GitOps practices using ArgoCD for declarative continuous deployment.",
+      "Architected secure cloud infrastructure on AWS with automated backup and disaster recovery.",
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
+    id: "horaay",
+    title: "Developer",
+    companyName: "Horaay Event Pro",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Building and scaling the Hooray Event Platform — a full-featured event management ecosystem.",
+      "Developed the Hooray Cards & Reservation System with QR-based virtual ticketing.",
+      "Built MYEVIEW, a Golang-powered cybersecurity intelligence tool for asset discovery.",
+      "Architecting multi-region AWS infrastructure with focus on reliability and performance.",
     ],
   },
 ];
@@ -181,46 +190,88 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
+      "Kelcy's expertise in DevOps transformed our deployment process. What used to take days now takes minutes.",
+    name: "Anonymous Info",
     designation: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
+];
+
+const hobbies: THobby[] = [
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    id: "opensource",
+    hobby: "Open Source Contributing",
+    description:
+      "I love diving into open source projects — reading code, fixing bugs, and contributing features. It's how I sharpen my skills and give back to the community that helped me grow.",
+    emoji: "🛠️",
+    color: "from-violet-600 to-indigo-500",
+    tags: ["#github", "#oss", "#collaboration"],
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    id: "ctf",
+    hobby: "CTF & Cybersecurity Challenges",
+    description:
+      "Capture The Flag competitions are my digital playground. From reverse engineering to web exploits, I enjoy the puzzle-solving nature of ethical hacking challenges.",
+    emoji: "🔐",
+    color: "from-rose-500 to-pink-600",
+    tags: ["#ctf", "#security", "#hacking"],
+  },
+  {
+    id: "sideprojects",
+    hobby: "Building Side Projects",
+    description:
+      "Nothing beats turning an idea into a working product. I'm always hacking on side projects — from mobile apps to CLI tools — exploring new stacks and solving real problems.",
+    emoji: "🚀",
+    color: "from-emerald-500 to-teal-600",
+    tags: ["#buildinpublic", "#sideprojects", "#shipping"],
+  },
+  {
+    id: "techdocs",
+    hobby: "Reading Tech Docs & Research Papers",
+    description:
+      "I'm a documentation nerd. Reading RFCs, white papers, and research on distributed systems, networking, and security keeps me sharp and ahead of the curve.",
+    emoji: "📚",
+    color: "from-amber-500 to-orange-500",
+    tags: ["#research", "#learning", "#deepdive"],
+  },
+  {
+    id: "homelab",
+    hobby: "Homelab Tinkering",
+    description:
+      "My home server is my sandbox. I experiment with self-hosted services, networking, VMs, and containerized workloads — because the best way to learn infra is to break it and fix it.",
+    emoji: "🖥️",
+    color: "from-sky-500 to-blue-600",
+    tags: ["#homelab", "#selfhosted", "#linux"],
+  },
+  {
+    id: "music",
+    hobby: "Music & Lo-fi Coding Sessions",
+    description:
+      "A good coding session always has a soundtrack. I'm obsessed with lo-fi hip-hop, jazz, and ambient beats. Sometimes I produce my own loops when the creativity hits.",
+    emoji: "🎵",
+    color: "from-fuchsia-500 to-purple-600",
+    tags: ["#lofi", "#music", "#vibes"],
   },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    id: "hooray",
+    name: "Hooray — Event Manager",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A full-featured event management platform where service providers can post services, create events, and manage bookings. Service pros get a dedicated dashboard to list offerings, set availability, and reach event organizers — all in real time. Built with Firebase, React, and deployed for production use.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "deployed",
         color: "pink-text-gradient",
       },
     ],
@@ -228,20 +279,21 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/",
   },
   {
-    name: "Job IT",
+    id: "myeview",
+    name: "MYEVIEW — Cyber Intelligence",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A powerful cybersecurity intelligence application designed for asset discovery, network recon, and threat visibility. MYEVIEW helps security teams map their attack surface with automated scans, asset fingerprinting, and actionable intelligence — all from a clean, fast interface built in Go and deployed on AWS.",
     tags: [
       {
-        name: "react",
+        name: "golang",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "cybersecurity",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "aws",
         color: "pink-text-gradient",
       },
     ],
@@ -249,20 +301,21 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    id: "cards",
+    name: "Hooray Cards & Reservations",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A smart reservation and ticketing system that lets attendees book their spots at events with virtual tickets. Features include QR code generation for seamless on-site check-in, real-time seat availability, and an admin panel to manage capacity and scan entries at the door. Events, reimagined.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "qr-system",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
@@ -271,4 +324,4 @@ const projects: TProject[] = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, hobbies, projects };

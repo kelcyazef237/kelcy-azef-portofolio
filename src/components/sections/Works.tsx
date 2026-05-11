@@ -8,15 +8,21 @@ import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import { TProject } from "../../types";
+import { useTranslation } from "../../hooks/useTranslation";
 
 const ProjectCard: React.FC<{ index: number } & TProject> = ({
   index,
+  id,
   name,
   description,
   tags,
   image,
   sourceCodeLink,
 }) => {
+  const { t } = useTranslation();
+  const tName = t(`projectsList.${id}.name`, { defaultValue: name });
+  const tDescription = t(`projectsList.${id}.description`, { defaultValue: description });
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -47,8 +53,8 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
             </div>
           </div>
           <div className="mt-5">
-            <h3 className="text-[24px] font-bold text-white">{name}</h3>
-            <p className="text-secondary mt-2 text-[14px]">{description}</p>
+            <h3 className="text-[24px] font-bold text-white">{tName}</h3>
+            <p className="text-secondary mt-2 text-[14px]">{tDescription}</p>
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
@@ -64,16 +70,18 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
 };
 
 const Works = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-      <Header useMotion={true} {...config.sections.works} />
+      <Header useMotion={true} p={t("works.subtitle")} h2={t("works.title")} />
 
       <div className="flex w-full">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="text-secondary mt-3 max-w-3xl text-[17px] leading-[30px]"
         >
-          {config.sections.works.content}
+          {t("works.content")}
         </motion.p>
       </div>
 

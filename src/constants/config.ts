@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Kelcy AZEFACK — 3D Portfolio",
+    fullName: "Kelcy AZEFACK",
+    email: "kelcy.azefack@mail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Kelcy AZEFACK",
+    p: ["I build apps, automate infrastructure,", "and ship products — Dev & DevOps"],
   },
   contact: {
     p: "Get in touch",
@@ -67,19 +67,21 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I'm a Developer and DevOps Engineer who builds products end-to-end —
+      from writing clean, scalable code to deploying and automating cloud infrastructure.
+      My stack spans React, TypeScript, Golang, Node.js on the development side,
+      and Kubernetes, Docker, Terraform, and AWS on the infrastructure side.
+      I'm passionate about crafting real products that solve real problems —
+      whether that's a full-featured event platform, a cybersecurity intelligence tool,
+      or a seamless ticketing and reservation system.`,
     },
     experience: {
       p: "What I have done so far",
       h2: "Work Experience.",
     },
     feedbacks: {
-      p: "What others say",
-      h2: "Testimonials.",
+      p: "Beyond the code",
+      h2: "Hobbies & Interests.",
     },
     works: {
       p: "My work",

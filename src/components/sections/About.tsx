@@ -7,15 +7,20 @@ import { SectionWrapper } from "../../hoc";
 import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
+import { useTranslation } from "../../hooks/useTranslation";
 
 interface IServiceCard {
   index: number;
+  id?: string;
   title: string;
   icon: string;
 }
 
-const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
-  <Tilt
+const ServiceCard: React.FC<IServiceCard> = ({ index, id, title, icon }) => {
+  const { t } = useTranslation();
+  
+  return (
+    <Tilt
     glareEnable
     tiltEnable
     tiltMaxAngleX={30}
@@ -34,25 +39,28 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
             className="h-16 w-16 object-contain"
           />
 
-          <h3 className="text-center text-[20px] font-bold text-white">
-            {title}
-          </h3>
-        </div>
-      </motion.div>
-    </div>
-  </Tilt>
-);
+            <h3 className="text-center text-[20px] font-bold text-white">
+              {t(`services.${id}`) || title}
+            </h3>
+          </div>
+        </motion.div>
+      </div>
+    </Tilt>
+  );
+};
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-      <Header useMotion={true} {...config.sections.about} />
+      <Header useMotion={true} p={t("about.subtitle")} h2={t("about.title")} />
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="text-secondary mt-4 max-w-3xl text-[17px] leading-[30px]"
       >
-        {config.sections.about.content}
+        {t("about.content")}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10 max-sm:justify-center">

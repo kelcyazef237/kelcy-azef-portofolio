@@ -2,6 +2,7 @@ export type TCommonProps = {
   title?: string;
   name?: string;
   icon?: string;
+  id?: string;
 };
 
 export type TExperience = {
@@ -17,6 +18,15 @@ export type TTestimonial = {
   company: string;
   image: string;
 } & Required<Pick<TCommonProps, "name">>;
+
+export type THobby = {
+  id?: string;
+  hobby: string;
+  description: string;
+  emoji: string;
+  color: string;
+  tags: string[];
+};
 
 export type TProject = {
   description: string;

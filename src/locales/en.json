@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Kelcy AZEFACK",
+    "tagline1": "I build apps, automate infrastructure,",
+    "tagline2": "and ship products — Dev & DevOps"
+  },
+  "about": {
+    "subtitle": "Introduction",
+    "title": "Overview.",
+    "content": "I'm a Developer and DevOps Engineer who builds products end-to-end — from writing clean, scalable code to deploying and automating cloud infrastructure. My stack spans React, TypeScript, Golang, Node.js on the development side, and Kubernetes, Docker, Terraform, and AWS on the infrastructure side. I'm passionate about crafting real products that solve real problems — whether that's a full-featured event platform, a cybersecurity intelligence tool, or a seamless ticketing and reservation system."
+  },
+  "experience": {
+    "subtitle": "What I have done so far",
+    "title": "Work Experience."
+  },
+  "feedbacks": {
+    "subtitle": "Beyond the code",
+    "title": "Hobbies & Interests.",
+    "showing": "Showing 3 of 6 — what makes me tick outside of work."
+  },
+  "works": {
+    "subtitle": "My work",
+    "title": "Projects.",
+    "content": "Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively."
+  },
+  "contact": {
+    "subtitle": "Get in touch",
+    "title": "Contact.",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "What's your name?",
+    "emailLabel": "Your Email",
+    "emailPlaceholder": "What's your email?",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "What do you want to say?",
+    "send": "Send",
+    "sending": "Sending..."
+  },
+  "services": {
+    "fullstack": "Full-Stack Developer",
+    "devops": "DevOps Engineer",
+    "cloud": "Cloud & Infrastructure",
+    "mobile": "Mobile & App Builder"
+  },
+  "experiencesList": {
+    "mboa": {
+      "title": "Developer",
+      "points": [
+        "Built and maintained full-stack features for the Mboa Kitchen app using React and Node.js.",
+        "Set up CI/CD pipelines using GitHub Actions for automated testing and deployment.",
+        "Dockerized the application for consistent development and production environments.",
+        "Integrated Firebase for real-time database, authentication, and cloud storage."
+      ]
+    },
+    "altech": {
+      "title": "Developer & DevOps Engineer",
+      "points": [
+        "Developed scalable backend services and REST APIs using Node.js and Golang.",
+        "Designed and implemented CI/CD workflows reducing deployment time by 60%.",
+        "Managed Kubernetes clusters for production workloads with automated scaling capabilities.",
+        "Implemented infrastructure as code practices using Terraform for cloud deployments."
+      ]
+    },
+    "docgen": {
+      "title": "Developer",
+      "points": [
+        "Developed document generation features for enterprise clients using React and TypeScript.",
+        "Migrated legacy applications to containerized microservices architecture on AWS.",
+        "Implemented GitOps practices using ArgoCD for declarative continuous deployment.",
+        "Architected secure cloud infrastructure on AWS with automated backup and disaster recovery."
+      ]
+    },
+    "horaay": {
+      "title": "Developer",
+      "points": [
+        "Building and scaling the Hooray Event Platform — a full-featured event management ecosystem.",
+        "Developed the Hooray Cards & Reservation System with QR-based virtual ticketing.",
+        "Built MYEVIEW, a Golang-powered cybersecurity intelligence tool for asset discovery.",
+        "Architecting multi-region AWS infrastructure with focus on reliability and performance."
+      ]
+    }
+  },
+  "projectsList": {
+    "hooray": {
+      "name": "Hooray — Event Manager",
+      "description": "A full-featured event management platform where service providers can post services, create events, and manage bookings. Service pros get a dedicated dashboard to list offerings, set availability, and reach event organizers — all in real time. Built with Firebase, React, and deployed for production use."
+    },
+    "myeview": {
+      "name": "MYEVIEW — Cyber Intelligence",
+      "description": "A powerful cybersecurity intelligence application designed for asset discovery, network recon, and threat visibility. MYEVIEW helps security teams map their attack surface with automated scans, asset fingerprinting, and actionable intelligence — all from a clean, fast interface built in Go and deployed on AWS."
+    },
+    "cards": {
+      "name": "Hooray Cards & Reservations",
+      "description": "A smart reservation and ticketing system that lets attendees book their spots at events with virtual tickets. Features include QR code generation for seamless on-site check-in, real-time seat availability, and an admin panel to manage capacity and scan entries at the door. Events, reimagined."
+    }
+  },
+  "hobbiesList": {
+    "opensource": {
+      "hobby": "Open Source Contributing",
+      "description": "I love diving into open source projects — reading code, fixing bugs, and contributing features. It's how I sharpen my skills and give back to the community that helped me grow."
+    },
+    "ctf": {
+      "hobby": "CTF & Cybersecurity Challenges",
+      "description": "Capture The Flag competitions are my digital playground. From reverse engineering to web exploits, I enjoy the puzzle-solving nature of ethical hacking challenges."
+    },
+    "sideprojects": {
+      "hobby": "Building Side Projects",
+      "description": "Nothing beats turning an idea into a working product. I'm always hacking on side projects — from mobile apps to CLI tools — exploring new stacks and solving real problems."
+    },
+    "techdocs": {
+      "hobby": "Reading Tech Docs & Research Papers",
+      "description": "I'm a documentation nerd. Reading RFCs, white papers, and research on distributed systems, networking, and security keeps me sharp and ahead of the curve."
+    },
+    "homelab": {
+      "hobby": "Homelab Tinkering",
+      "description": "My home server is my sandbox. I experiment with self-hosted services, networking, VMs, and containerized workloads — because the best way to learn infra is to break it and fix it."
+    },
+    "music": {
+      "hobby": "Music & Lo-fi Coding Sessions",
+      "description": "A good coding session always has a soundtrack. I'm obsessed with lo-fi hip-hop, jazz, and ambient beats. Sometimes I produce my own loops when the creativity hits."
+    }
+  }
+}
