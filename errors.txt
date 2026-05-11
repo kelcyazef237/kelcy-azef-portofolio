@@ -1,0 +1,26 @@
+src/components/sections/About.tsx(8,1): error TS6133: 'config' is declared but its value is never read.
+src/components/sections/Experience.tsx(13,1): error TS6133: 'config' is declared but its value is never read.
+src/components/sections/Feedbacks.tsx(9,1): error TS6133: 'config' is declared but its value is never read.
+src/components/sections/Feedbacks.tsx(80,10): error TS6133: 'shuffleKey' is declared but its value is never read.
+src/components/sections/Feedbacks.tsx(80,22): error TS6133: 'setShuffleKey' is declared but its value is never read.
+src/components/sections/Hero.tsx(5,1): error TS6133: 'config' is declared but its value is never read.
+src/components/sections/Works.tsx(8,1): error TS6133: 'config' is declared but its value is never read.
+src/components/sections/Works.tsx(15,3): error TS2339: Property 'id' does not exist on type '{ index: number; } & { description: string; tags: { name: string; color: string; }[]; image: string; sourceCodeLink: string; } & Required<Pick<TCommonProps, "name">>'.
+src/constants/index.ts(77,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(81,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(85,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(89,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(93,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(97,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(101,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(105,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(109,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(113,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(117,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(121,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(125,3): error TS2741: Property 'id' is missing in type '{ name: string; icon: string; }' but required in type 'Required<Omit<TCommonProps, "title">>'.
+src/constants/index.ts(260,5): error TS2353: Object literal may only specify known properties, and 'id' does not exist in type 'TProject'.
+src/constants/index.ts(282,5): error TS2353: Object literal may only specify known properties, and 'id' does not exist in type 'TProject'.
+src/constants/index.ts(304,5): error TS2353: Object literal may only specify known properties, and 'id' does not exist in type 'TProject'.
+src/i18n.ts(1,18): error TS2307: Cannot find module 'i18next' or its corresponding type declarations.
+src/i18n.ts(2,34): error TS2307: Cannot find module 'react-i18next' or its corresponding type declarations.

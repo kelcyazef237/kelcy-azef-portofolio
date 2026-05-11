@@ -6,7 +6,6 @@ import { fadeIn } from "../../utils/motion";
 import { hobbies } from "../../constants";
 import { Header } from "../atoms/Header";
 import { THobby } from "../../types";
-import { config } from "../../constants/config";
 import { useTranslation } from "../../hooks/useTranslation";
 
 const HobbyCard: React.FC<{ index: number } & THobby> = ({
@@ -77,7 +76,6 @@ const HobbyCard: React.FC<{ index: number } & THobby> = ({
 const Feedbacks = () => {
   const { t } = useTranslation();
   const [displayed, setDisplayed] = useState<THobby[]>([]);
-  const [shuffleKey, setShuffleKey] = useState(0);
 
   useEffect(() => {
     // Just display the first 3 hobbies

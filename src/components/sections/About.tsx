@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { services } from "../../constants";
 import { SectionWrapper } from "../../hoc";
 import { fadeIn } from "../../utils/motion";
-import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import { useTranslation } from "../../hooks/useTranslation";
 

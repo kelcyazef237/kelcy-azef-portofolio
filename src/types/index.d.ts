@@ -2,10 +2,10 @@ export type TCommonProps = {
   title?: string;
   name?: string;
   icon?: string;
-  id?: string;
 };
 
 export type TExperience = {
+  id?: string;
   companyName: string;
   iconBg: string;
   date: string;
@@ -29,6 +29,7 @@ export type THobby = {
 };
 
 export type TProject = {
+  id?: string;
   description: string;
   tags: {
     name: string;
@@ -38,13 +39,17 @@ export type TProject = {
   sourceCodeLink: string;
 } & Required<Pick<TCommonProps, "name">>;
 
-export type TTechnology = Required<Omit<TCommonProps, "title">>;
+export type TTechnology = {
+  id?: string;
+} & Required<Omit<TCommonProps, "title">>;
 
 export type TNavLink = {
   id: string;
 } & Required<Pick<TCommonProps, "title">>;
 
-export type TService = Required<Omit<TCommonProps, "name">>;
+export type TService = {
+  id?: string;
+} & Required<Omit<TCommonProps, "name">>;
 
 export type TMotion = {
   direction: "up" | "down" | "left" | "right" | "";

@@ -10,7 +10,6 @@ import { experiences } from "../../constants";
 import { SectionWrapper } from "../../hoc";
 import { Header } from "../atoms/Header";
 import { TExperience } from "../../types";
-import { config } from "../../constants/config";
 import { useTranslation } from "../../hooks/useTranslation";
 
 const ExperienceCard: React.FC<TExperience> = (experience) => {
